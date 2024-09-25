@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            grid-template-columns: 200px 1fr;
+            height: 100vh;
+            margin: 0;
+        }
+        header {
+            grid-column: 1 / 3;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        aside {
+            grid-row: 2;
+            background-color: #f4f4f4;
+            padding: 1em;
+            display: flex;
+            flex-direction: column;
+        }
+        main {
+            grid-row: 2;
+            padding: 1em;
+        }
+
+        .caixa {
+            width: 99%;
+            height: 60px;
+            background-color: darkseagreen;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Amigos de Orleans</h1>
+</header>
+<aside>
+    <div id="caixa1" class="caixa">Item 1</div>
+    <div id="caixa2" class="caixa">Item 2</div>
+    <div id="caixa3" class="caixa">Item 3</div>
+</aside>
+<main>
+    <h2>Amigos de Orleans</h2>
+    <p>Pagina dos Rapazes</p>
+</main>
+<script>
+    // JavaScript code to manipulate the DOM or add interactivity
+    document.getElementById('caixa1').addEventListener('click', function() {
+        alert('Item 1 clicked');
+    });
+</script>
+</body>
+</html>
